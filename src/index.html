@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/style.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .active2:hover {
+          background-color: aquamarine;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav
+        class="flex justify-between bg-teal-700 text-gray-700 w-full h-12 items-center p-0"
+      >
+        <div>
+          <a href="" class="transition-transform">CleanWay</a>
+        </div>
+        <div class="md:hidden">
+          <a href="">X</a>
+        </div>
+        <ul class="md:flex justify-center m-0 hidden">
+          <li class="active"><a href="">Home</a></li>
+          <li class="active"><a href="">Product</a></li>
+          <li class="active"><a href=""></a>Services</li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
